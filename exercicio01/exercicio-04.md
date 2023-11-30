@@ -1,8 +1,66 @@
 # Exercício JS 4
 
-***Observação:** para os exercícios propostos, **não** utilize funções nativas do JavaScript como Array.find(), Array.filter(), etc.*
+***Observação:** para os exercícios propostos abaixo, **não** utilize funções nativas do JavaScript como Array.find(), Array.filter(), etc.*
 
-## 1. Crie uma função chamada **findUserById** que receba dois parâmetros: 
+## 1. Crie uma função chamada **showProductsInfo** que receba como parâmetro: 
+- Uma lista de objetos que representarão produtos
+## A função deve retornar:
+- A mensagem "O parâmetro deve ser uma lista!", caso o parâmetro **não** seja uma lista
+- As informações dos produtos formatada como descrito abaixo, caso a lista tenha produtos
+```
+Id do produto: {id}
+Nome do produto: {name}
+Preço do produto: R$ {price}
+```
+- A mensagem "A lista não possui produtos!", caso a lista esteja vazia
+
+**Exemplo:**
+```JavaScript
+const products = [
+    {
+        id: 1,
+        name: 'Jogo de Panelas',
+        price: 54.59
+    },
+    {
+        id: 2,
+        name: 'Chocolate L',
+        price: 14.99
+    },
+    {
+        id: 3,
+        name: 'Sabão Lili'
+        price: 29.99
+    }
+]
+
+console.log(showProductsInfo(products))
+/* resultado no terminal deve ser:
+Id do produto: 1
+Nome do produto: Jogo de Panelas
+Preço do produto: R$ 54.59
+
+Id do produto: 2
+Nome do produto: Chocolate L
+Preço do produto: R$ 14.99
+
+Id do produto: 3
+Nome do produto: Sabão Lili
+Preço do produto: R$ 29.99
+*/
+
+console.log(showProductsInfo([]))
+/* resultado no terminal deve ser:
+A lista não possui produtos!
+*/
+
+console.log(showProductsInfo(2))
+/* resultado no terminal deve ser:
+O parâmetro deve ser uma lista!
+*/
+```
+
+## 2. Crie uma função chamada **findUserById** que receba dois parâmetros: 
 - Uma lista de objetos que representarão usuários
 - Um número que representará o id do usuário
 ## A função deve retornar:
@@ -46,7 +104,7 @@ O segundo parâmetro deve ser um número!
 */
 ```
 
-## 2. Crie uma função chamada **filterProductByName** que receba dois parâmetros: 
+## 3. Crie uma função chamada **filterProductByName** que receba dois parâmetros: 
 - Uma lista de objetos que representarão produtos
 - Uma string que representará o nome do produto
 ## A função deve retornar:
@@ -97,7 +155,7 @@ O segundo parâmetro deve ser uma string!
 */
 ```
 
-## 3. Crie uma função chamada **mapProductsRemoveId** que receba como parâmetro: 
+## 4. Crie uma função chamada **mapProductsRemoveId** que receba como parâmetro: 
 - Uma lista de objetos que representarão produtos
 ## A função deve retornar:
 - A mensagem "O parâmetro deve ser uma lista!", caso o parâmetro **não** seja uma lista
@@ -153,7 +211,7 @@ O parâmetro deve ser uma lista!
 */
 ```
 
-## 4. Crie uma função chamada **sumProductsPrice** que receba como parâmetro: 
+## 5. Crie uma função chamada **sumProductsPrice** que receba como parâmetro: 
 - Uma lista de objetos que representarão produtos
 ## A função deve retornar:
 - A mensagem "O parâmetro deve ser uma lista!", caso o parâmetro **não** seja uma lista
