@@ -3,7 +3,7 @@
 ## 1. Ceverino tem uma estante com três compartimentos um em cima do outro. Cada compartimento comporta três caixas uma ao lado da outra. As caixas possuem duas características que o Ceverino sempre observa: cor da caixa e a numeração escrita nela. Sabendo disso, escolha uma estrutura de dados para representar a estante de Ceverino e um tipo de dado para representar a caixa.
 **Exemplo ilustrativo da estante de Ceverino:**
 <div align="center">
-    <img title="Exemplo ilustrativo da estante de Ceverino" src="./images-exe-06/image01-exe-06.png"/>
+    <img title="Exemplo ilustrativo da estante de Ceverino" src="./utils-exe-06/image01-exe-06.png"/>
 </div>
 
 ## 2. A partir do exercício 1, crie uma função que receba dois parâmetros:
@@ -14,7 +14,7 @@
 
 **Exemplo ilustrativo das caixas da estante que serão retornadas, caso o primeira compartimento seja o solicitado:**
 <div align="center">
-    <img title="Exemplo ilustrativo da estante de Ceverino" src="./images-exe-06/image02-exe-06.png"/>
+    <img title="Exemplo ilustrativo da estante de Ceverino" src="./utils-exe-06/image02-exe-06.png"/>
 </div>
 
 ## 3. A partir do exercício 1, crie uma função que receba dois parâmetros:
@@ -25,7 +25,7 @@
 
 **Exemplo ilustrativo das caixas da estante que serão retornadas, caso a primeira coluna seja o solicitada:**
 <div align="center">
-    <img title="Exemplo ilustrativo da estante de Ceverino" src="./images-exe-06/image03-exe-06.png"/>
+    <img title="Exemplo ilustrativo da estante de Ceverino" src="./utils-exe-06/image03-exe-06.png"/>
 </div>
 
 ## 4. A partir do exercício 1, crie uma função que receba dois parâmetros:
@@ -35,7 +35,7 @@
 
 **Exemplo ilustrativo das caixas da estante que serão retornadas:**
 <div align="center">
-    <img title="Exemplo ilustrativo da estante de Ceverino" src="./images-exe-06/image04-exe-06.png"/>
+    <img title="Exemplo ilustrativo da estante de Ceverino" src="./utils-exe-06/image04-exe-06.png"/>
 </div>
 
 ## 5. A partir do exercício 1, crie uma função que receba dois parâmetros:
@@ -45,7 +45,7 @@
 
 **Exemplo ilustrativo das caixas da estante que serão retornadas:**
 <div align="center">
-    <img title="Exemplo ilustrativo da estante de Ceverino" src="./images-exe-06/image05-exe-06.png"/>
+    <img title="Exemplo ilustrativo da estante de Ceverino" src="./utils-exe-06/image05-exe-06.png"/>
 </div>
 
 ## 6. Crie uma função chamada **uniqueValues** que receba como parâmetro: 
@@ -104,3 +104,39 @@ console.log(innerJoin(2, numbers2))
 O primeiro parâmetro deve ser uma lista!
 */
 ```
+
+## 8. O código abaixo foi escrito por Ceverino. Sua intenção era mostrar os dados que estão no arquivo [users.csv](./utils-exe-06/users.csv) no terminal. Na máquina do Ceverino, o arquivo que o código está escrito e o arquivo users.csv estão localizados no mesmo diretório. Ao executar o código, aparecia a seguinte mensagem no seu terminal: Promise { \<pending> }. Dito isso, ajude Ceverino a alcançar seus objetivos alterando o que for preciso no código: 
+**Código:**
+```JavaScript
+const fs = require('fs').promises
+
+const usersString = fs.readFile('./users.csv', 'utf-8', 'r')
+
+console.log(usersString)
+
+// ...
+```
+
+## 9. A partir do código abaixo e dos arquivos [users.csv](./utils-exe-06/users.csv) e [address.csv](./utils-exe-06/address.csv), desenvolva um algoritmo que imprima no terminal os dados dos usuários e seus respectivos endereços:
+**Código:**
+```JavaScript
+const fs = require('fs').promises
+
+// ...
+```
+**Exemplo de saída no terminal:**
+```cmd
+Usuário: Carlos Júnior
+Endereço: Av. José Listeu, 24
+
+Usuário: Joao Vitor
+Endereço: Rua Teixeira dos Santos, 456
+
+Usuário: Joao Carlos
+Endereço: Rua Raimundo Meneguel, 7899
+
+Usuário: Thiago Alves
+Endereço: Rua Lenador Lenha Ra, 10
+```
+
+***Observação:** tente resolver o problema mantendo a estrutura dos arquivos.*
