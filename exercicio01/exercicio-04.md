@@ -205,7 +205,7 @@ console.log(mapProductsRemoveId([]))
 []
 */
 
-console.log(filterProductByName(2))
+console.log(mapProductsRemoveId(2))
 /* resultado no terminal deve ser:
 O parâmetro deve ser uma lista!
 */
