@@ -140,3 +140,5 @@ Endereço: Rua Lenador Lenha Ra, 10
 ```
 
 ***Observação:** tente resolver o problema mantendo a estrutura dos arquivos.*
+
+***Dicas:** pesquise sobre as funções nativas de uma **string**, como por exemplo **split()** e **replace()**. Elas podem te ajudar.*
