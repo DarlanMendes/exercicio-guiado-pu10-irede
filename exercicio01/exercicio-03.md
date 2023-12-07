@@ -4,16 +4,15 @@ Restrições:
 - Se receber como argumento algo diferente de string retorne uma mensagem de erro pedindo para o usuário digitar somente strings.
 - As strings devem ter comprimento maior que 3.
 
-02 - Crie uma função  array com números fornecidos pelo usuário.
+02 - Crie uma função que receba um array de um tamanho qualquer com números fornecidos pelo usuário e que retorne a multiplicacão entre o primeiro e último item, como também o resto entre esses dois números.
 Por exemplo:
 ```javascript
     numeros = [1, 2, 4, 5, 3, 2, 7, 9, 0, 2]
-    //total de items 10 (n=10)
 ```
-E retorne o resultado da multiplicação como descrito abaixo:
+Exemplo:
 ```javascript
-     multiplicacao = numeros[0] * numeros[n-1] //no caso , numeros[0] e numeros[9] multiplicacao = 1*2
-    resto = numeros[0]%numeros[n-1] // no caso, numeros[0]%numeros[9] resto = 1%2 
+   multiplicacao ===> 1*2 //2
+   resto ===> 1%2  //1
 ```
 
 03.Crie uma função que receba uma string que pode ser uma das quatro operações básicas da matemática('soma', 'subtração', 'multiplicação' e 'divisão') como primeiro argumento,e o segundo e terceiro como números em que essa operação seja aplicada .
@@ -39,8 +38,11 @@ E retorne o resultado da multiplicação como descrito abaixo:
         soma(num1, num2)
     }
 ```
-05.Crie uma função que adicione números de forma "ilimitada";
-
+05.Crie uma função que receba diversos argumentos que serão números e retorne a soma de todos;
+```javascript
+    let soma = somatorio(2,3,5,1)
+    soma===>11
+```
 06.Crie uma função que calcule o fatorial de um número fornecido como argumento.
 Por exemplo:
 ```javascript 
