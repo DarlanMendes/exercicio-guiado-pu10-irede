@@ -4,8 +4,8 @@
 Por exemplo:
 ```javascript
     let numeros=[-2,3,0,4,2-1,-4,8]
-    let numerosPares = funcaoPrincipal(numeros, funcaoCallback)
-    numerosPares ===> [3,2,8]
+    let numerosPositivos = funcaoPrincipal(numeros, funcaoCallback)
+    numerosPositivos ===> [3,2,8]
 ```
 02 - Crie uma função que receba um array de objetos de compra , um array de objetos de produto e uma função de callback.A função de callback deve verificar a identificação dos produtos presentes no objeto da compra e criar um novo objeto que substitua o identificador pelo objeto do produto.
 <br/>
